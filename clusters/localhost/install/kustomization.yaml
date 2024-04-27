@@ -10,6 +10,8 @@ commonLabels:
 
 resources:
 - ../../../apps/tg-ambulance-ufe
+- ../../../apps/tg-ambulance-webapi
+- ../../../apps/mongo-express
 
 components:
 - ../../../components/version-developers

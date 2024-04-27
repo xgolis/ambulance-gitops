@@ -25,26 +25,26 @@ spec:
          name: tg-ambulance-webapi
          port: 80
    - matches:
-       - path:
-           type: PathPrefix
-          value: /<pfx>-openapi-ui
+        - path:
+            type: PathPrefix
+            value: /tg-openapi-ui
      backendRefs:
-       - group: ""
-         kind: Service
-         name: <pfx>-openapi-ui
-         port: 80
+      - group: ""
+        kind: Service
+        name: tg-openapi-ui
+        port: 80
    - matches:
-       - path:
-           type: Exact
-           value: /<pfx>-openapi
+        - path:
+            type: Exact
+            value: /tg-openapi
      filters:
-     - type: URLRewrite
-       urlRewrite:
-         path:
-           type: ReplaceFullPath
-          replaceFullPath: /openapi
+      - type: URLRewrite
+        urlRewrite:
+          path:
+            type: ReplaceFullPath
+            replaceFullPath: /openapi
      backendRefs:
-       - group: ""
-         kind: Service
-         name: <pfx>-ambulance-webapi
-         port: 80
+        - group: ""
+          kind: Service
+          name: tg-ambulance-webapi
+          port: 80
