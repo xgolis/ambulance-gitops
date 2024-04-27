@@ -23,5 +23,5 @@ replacements:
      name:  tg-ambulance-ufe-deployment
      fieldPath: spec.template.spec.containers.0.image
      options:
-         delimiter: ':'
-         index: 1
+       delimiter: ':'
+       index: 1
