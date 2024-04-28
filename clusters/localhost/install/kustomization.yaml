@@ -12,6 +12,7 @@ resources:
 - ../../../apps/tg-ambulance-ufe
 - ../../../apps/tg-ambulance-webapi
 - ../../../apps/mongo-express
+- ../../../apps/http-echo
 
 patches:
 - path: patches/ambulance-webapi.service.yaml
